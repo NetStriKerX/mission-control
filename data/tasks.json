@@ -1,54 +1,54 @@
 {
   "tasks": [
     {
-      "id": "pm_setup_001",
-      "title": "🤖 Setup PM Agent Sub-agent",
-      "description": "Create and configure a Project Manager AI assistant that acts as PM via chat. This agent will help with:\n- Breaking down tasks into subtasks\n- Prioritizing work items\n- Estimating effort/time\n- Tracking progress across projects\n- Following up on deadlines\n- Documenting decisions and summaries\n\n**Approach:** Create this as a sub-agent in OpenClaw with its own memory file for project tracking.\n\n**Delivery:** User will interact with PM agent via Telegram - create sub-agent session that can receive messages via Telegram channel.",
-      "status": "done",
-      "project": "pm",
-      "tags": ["pm", "setup", "agent"],
-      "subtasks": [
-        { "id": "sub_001", "title": "Design PM agent identity and scope", "done": true },
-        { "id": "sub_002", "title": "Create PM memory file structure", "done": false },
-        { "id": "sub_003", "title": "Configure PM agent in OpenClaw", "done": false },
-        { "id": "sub_004", "title": "Test PM agent with sample task breakdown", "done": false }
-      ],
-      "priority": "high",
-      "dod": "PM agent responds to project management requests via chat and maintains project tracking memory",
-      "comments": [
-        {
-          "author": "OpenClaw",
-          "text": "Started setup - user wants to interact with PM agent via Telegram",
-          "timestamp": "2026-02-03T06:50:00Z"
-        },
-        {
-          "author": "OpenClaw",
-          "text": "Note: Main agent acting as PM for now - PM sub-agent exists but not bound to Telegram yet",
-          "timestamp": "2026-02-03T06:53:00Z"
-        }
-      ]
-    },
-    {
       "id": "arch_001",
       "title": "🏗 Senior Fullstack System Architecture Design",
-      "description": "**Role:** Senior Fullstack Developer\n\n**Task:** Design and implement system architecture for a project\n\n**Requirements:**\n- Senior-level fullstack development experience\n- Strong system architecture skills\n- Ability to create comprehensive architectural designs\n- Review and optimize existing architecture\n- Make technical decisions (tech stack, patterns, trade-offs)\n- Document architecture clearly\n\n**Deliverables:**\n1. System architecture design document\n2. Architecture diagrams (if applicable)\n3. Tech stack recommendations\n4. Technical decisions and rationale\n\n**Priority:** High\n**Deadline:** ASAP",
-      "status": "backlog",
+      "description": "**Role:** Senior Fullstack Developer\n\n**Task:** Design and implement system architecture for sea-net-desktop-v2\n\n**Tech Stack Decision:**\n- **Recommended:** TypeScript + Tauri v2 (balanced: type safety + JS ecosystem)\n- **Rust Option:** Faster but steep learning curve (not recommended without Rust experience)\n- **Keyboard:** User lacks Rust experience → TypeScript preferred for faster delivery\n\n**Priority Mappings:**\n- Priority 1 (MUST-HAVE): UX improvements - Keyboard shortcuts\n- Priority 2: Productivity features\n- Priority 3: Advanced features - May simplify or defer for v2 MVP",
+      "status": "in_progress",
       "project": "pm",
-      "tags": ["architecture", "fullstack", "senior", "pm"],
-      "subtasks": [],
+      "tags": ["architecture", "fullstack", "senior", "pm", "tauri", "sea-net"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Define tech stack (TypeScript vs Rust)", "done": true },
+        { "id": "sub_002", "title": "Design system architecture", "done": false },
+        { "id": "sub_003", "title": "Define keyboard shortcuts system (Priority 1)", "done": false },
+        { "id": "sub_004", "title": "Simplify Priority 3 features for v2 MVP", "done": false },
+        { "id": "sub_005", "title": "Create architecture document", "done": false },
+        { "id": "sub_006", "title": "Define sprint tasks", "done": false }
+      ],
       "priority": "high",
-      "dod": "Complete system architecture design with documentation and recommendations",
-      "comments": []
+      "dod": "Complete system architecture design with documentation and sprint breakdown",
+      "comments": [
+        {
+          "author": "PM",
+          "text": "Tech stack decision: TypeScript + Tauri v2 (user lacks Rust experience)",
+          "timestamp": "2026-02-03T07:00:00Z"
+        },
+        {
+          "author": "User",
+          "text": "Question 1: Rust vs Tauri speed comparison - no Rust exp concerns",
+          "timestamp": "2026-02-03T07:00:00Z"
+        },
+        {
+          "author": "User",
+          "text": "Question 2: Keyboard clarity for Priority 3 features",
+          "timestamp": "2026-02-03T07:00:00Z"
+        },
+        {
+          "author": "PM",
+          "text": "Decision: TypeScript recommended - faster dev, better ecosystem, type safety",
+          "timestamp": "2026-02-03T07:01:00Z"
+        }
+      ]
     }
   ],
   "projects": [
     { "id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚" },
     { "id": "default", "name": "My Project", "color": "#3b82f6", "icon": "📁" },
-    { "id": "pm", "name": "Project Management", "color": "#8b5cf6", "icon": "📊" }
+    { "id": "pm", "name": "Project Management", "color": "#8b5cf6", "icon": "📊" },
+    { "id": "sea-net", "name": "Sea-Net Desktop v2", "color": "#f59e0b", "icon": "🚢" }
   ],
   "activities": [
-    { "type": "created", "actor": "PM", "task": "System Architecture Design", "time": "just now" },
-    { "type": "moved", "actor": "PM", "task": "PM Agent Setup", "to": "done", "time": "just now" }
+    { "type": "updated", "actor": "PM", "task": "System Architecture", "time": "just now" }
   ],
-  "lastUpdated": "2026-02-03T06:55:00Z"
+  "lastUpdated": "2026-02-03T07:01:00Z"
 }
