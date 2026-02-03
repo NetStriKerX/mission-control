@@ -1,27 +1,69 @@
 {
   "tasks": [
     {
-      "id": "timeline_001",
-      "title": "📅 sea-net-desktop-v2 - Complete Timeline & Sprint Breakdown",
-      "description": "**Total Timeline: 2 Weeks (14 Days)**\n\n**Week 1: Foundation & Core Features**\n\n**Day 1 (Mon 3 Feb):**\n- Sprint Planning & Architecture Review\n- Project setup (Vite + React + Tauri)\n- Database schema design (Prisma)\n- Setup CI/CD pipeline\n\n**Day 2 (Tue 4 Feb):**\n- Authentication system\n- User Management (CRUD + roles)\n- Setup state management (Zustand)\n\n**Day 3 (Wed 5 Feb):**\n- Customer Management\n- Template Manager (Excel parsing)\n- Setup React Hook Form + Zod\n\n**Day 4 (Thu 6 Feb):**\n- Booking System (carrier, vessel, voyage)\n- Task Management (assignment logic)\n- Dashboard overview\n\n**Day 5 (Fri 7 Feb):**\n- Testing Week 1\n- Bug fixes\n- Deploy to staging\n\n**Week 2: Productivity & Polish**\n\n**Day 6 (Mon 10 Feb):**\n- Shipment Tracking\n- Document Management\n- Audit Logging\n\n**Day 7 (Tue 11 Feb):**\n- Keyboard shortcuts system\n- Dark mode support\n- Auto-save forms\n\n**Day 8 (Wed 12 Feb):**\n- Advanced search & filters\n- Export to Excel\n- Toast notifications\n\n**Day 9 (Thu 13 Feb):**\n- Export to PDF\n- Calendar view\n- Analytics dashboard\n\n**Day 10 (Fri 14 Feb):**\n- Eamil notifications (SendGrid)\n- Activity feed\n- Quick actions\n\n**Day 11-12 (Sat-Sun):**\n- Integration testing\n- Performance optimization\n- Documentation\n\n**Day 13-14 (Mon-Tue):**\n- Final testing\n- Bug fixes\n- Production deployment\n\n**Milestones:**\n- M1 (Day 5): Foundation complete\n- M2 (Day 10): All features implemented\n- M3 (Day 14): Production ready\n\n**Deliverables:**\n- ✅ Working desktop app\n- ✅ User documentation\n- ✅ Technical documentation\n- ✅ Deployment pipeline\n\n**Timeline Type:** Aggressive 2-week sprint with full weekends",
-      "status": "backlog",
+      "id": "sprint1_day1",
+      "title": "🏗 Sprint 1 Day 1: Setup & Architecture",
+      "description": "**Date:** Monday, 3 Feb 2026\n\n**Goal:** Complete project setup and define architecture\n\n**Tasks:**\n1. Sprint Planning & Architecture Review\n2. Project setup (Vite + React + Tauri)\n3. Database schema design (Prisma)\n4. Setup CI/CD pipeline\n\n**Tech Stack:** TypeScript + Tauri v2\n\n**Expected Deliverables:**\n- Project initialized\n- Database schema documented\n- CI/CD pipeline running\n- Architecture decisions documented",
+      "status": "in_progress",
       "project": "sea-net",
-      "tags": ["timeline", "sprint", "planning", "sea-net"],
+      "tags": ["sprint1", "day1", "setup", "architecture"],
       "subtasks": [
-        { "id": "sub_001", "title": "Sprint 1: Foundation (Day 1-5)", "done": false },
-        { "id": "sub_002", "title": "Sprint 2: Productivity (Day 6-10)", "done": false },
-        { "id": "sub_003", "title": "Sprint 3: Polish (Day 11-14)", "done": false },
-        { "id": "sub_004", "title": "Deliverables & Deployment", "done": false }
+        { "id": "sub_001", "title": "Sprint planning meeting", "done": false },
+        { "id": "sub_002", "title": "Create GitHub repo & initialize project", "done": false },
+        { "id": "sub_003", "title": "Setup Vite + React + Tauri", "done": false },
+        { "id": "sub_004", "title": "Design Prisma schema (users, bookings, tasks, customers)", "done": false },
+        { "id": "sub_005", "title": "Setup GitHub Actions CI/CD", "done": false },
+        { "id": "sub_006", "title": "Document architecture decisions", "done": false }
       ],
       "priority": "high",
-      "dod": "Complete v2 with all Priority 1-2 features + Priority 3 skeleton",
+      "dod": "All subtasks complete + documentation available",
       "comments": [
         {
           "author": "PM",
-          "text": "Aggressive 2-week timeline with full weekend work",
-          "timestamp": "2026-02-03T08:10:00Z"
+          "text": "Sprint started - confirmed timeline approved by user",
+          "timestamp": "2026-02-03T08:15:00Z"
         }
       ]
+    },
+    {
+      "id": "timeline_001",
+      "title": "📅 sea-net-desktop-v2 - Complete Timeline",
+      "description": "**Total Timeline: 2 Weeks (14 Days)**",
+      "status": "done",
+      "project": "sea-net",
+      "tags": ["timeline", "planning"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Sprint 1: Foundation (Day 1-5)", "done": false },
+        { "id": "sub_002", "title": "Sprint 2: Productivity (Day 6-10)", "done": false },
+        { "id": "sub_003", "title": "Sprint 3: Polish (Day 11-12)", "done": false },
+        { "id": "sub_004", "title": "Wrap: Testing & Deploy (Day 13-14)", "done": false }
+      ],
+      "priority": "high",
+      "dod": "All tasks in timeline complete and deployed",
+      "comments": [
+        {
+          "author": "User",
+          "text": "Timeline approved - ready to start",
+          "timestamp": "2026-02-03T08:12:00Z"
+        }
+      ]
+    },
+    {
+      "id": "arch_001",
+      "title": "🏗 System Architecture Design",
+      "description": "Complete architecture design for sea-net-desktop-v2 with TypeScript + Tauri",
+      "status": "in_progress",
+      "project": "sea-net",
+      "tags": ["architecture", "tech-stack"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Define tech stack (TypeScript + Tauri)", "done": true },
+        { "id": "sub_002", "title": "Design system architecture", "done": false },
+        { "id": "sub_003", "title": "Create architecture document", "done": false },
+        { "id": "sub_004", "title": "Define database schema", "done": false }
+      ],
+      "priority": "high",
+      "dod": "Complete architecture document with diagrams and tech decisions",
+      "comments": []
     }
   ],
   "projects": [
@@ -31,7 +73,8 @@
     { "id": "sea-net", "name": "Sea-Net Desktop v2", "color": "#f59e0b", "icon": "🚢" }
   ],
   "activities": [
-    { "type": "created", "actor": "PM", "task": "Complete Timeline", "time": "just now" }
+    { "type": "moved", "actor": "User", "task": "Sprint 1 Day 1", "to": "in_progress", "time": "just now" },
+    { "type": "created", "actor": "PM", "task": "Sprint 1 Day 1", "time": "just now" }
   ],
-  "lastUpdated": "2026-02-03T08:10:00Z"
+  "lastUpdated": "2026-02-03T08:15:00Z"
 }
