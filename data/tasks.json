@@ -3,12 +3,12 @@
     {
       "id": "pm_setup_001",
       "title": "🤖 Setup PM Agent Sub-agent",
-      "description": "Create and configure a Project Manager AI assistant that acts as PM via chat. This agent will help with:\n- Breaking down tasks into subtasks\n- Prioritizing work items\n- Estimating effort/time\n- Tracking progress across projects\n- Following up on deadlines\n- Documenting decisions and summaries\n\n**Approach:** Create this as a sub-agent in OpenClaw with its own memory file for project tracking.\n\n**Delivery:** User will interact with PM agent via Telegram — create sub-agent session that can receive messages via Telegram channel.",
-      "status": "in_progress",
+      "description": "Create and configure a Project Manager AI assistant that acts as PM via chat. This agent will help with:\n- Breaking down tasks into subtasks\n- Prioritizing work items\n- Estimating effort/time\n- Tracking progress across projects\n- Following up on deadlines\n- Documenting decisions and summaries\n\n**Approach:** Create this as a sub-agent in OpenClaw with its own memory file for project tracking.\n\n**Delivery:** User will interact with PM agent via Telegram - create sub-agent session that can receive messages via Telegram channel.",
+      "status": "done",
       "project": "pm",
       "tags": ["pm", "setup", "agent"],
       "subtasks": [
-        { "id": "sub_001", "title": "Design PM agent identity and scope", "done": false },
+        { "id": "sub_001", "title": "Design PM agent identity and scope", "done": true },
         { "id": "sub_002", "title": "Create PM memory file structure", "done": false },
         { "id": "sub_003", "title": "Configure PM agent in OpenClaw", "done": false },
         { "id": "sub_004", "title": "Test PM agent with sample task breakdown", "done": false }
@@ -20,8 +20,25 @@
           "author": "OpenClaw",
           "text": "Started setup - user wants to interact with PM agent via Telegram",
           "timestamp": "2026-02-03T06:50:00Z"
+        },
+        {
+          "author": "OpenClaw",
+          "text": "Note: Main agent acting as PM for now - PM sub-agent exists but not bound to Telegram yet",
+          "timestamp": "2026-02-03T06:53:00Z"
         }
       ]
+    },
+    {
+      "id": "arch_001",
+      "title": "🏗 Senior Fullstack System Architecture Design",
+      "description": "**Role:** Senior Fullstack Developer\n\n**Task:** Design and implement system architecture for a project\n\n**Requirements:**\n- Senior-level fullstack development experience\n- Strong system architecture skills\n- Ability to create comprehensive architectural designs\n- Review and optimize existing architecture\n- Make technical decisions (tech stack, patterns, trade-offs)\n- Document architecture clearly\n\n**Deliverables:**\n1. System architecture design document\n2. Architecture diagrams (if applicable)\n3. Tech stack recommendations\n4. Technical decisions and rationale\n\n**Priority:** High\n**Deadline:** ASAP",
+      "status": "backlog",
+      "project": "pm",
+      "tags": ["architecture", "fullstack", "senior", "pm"],
+      "subtasks": [],
+      "priority": "high",
+      "dod": "Complete system architecture design with documentation and recommendations",
+      "comments": []
     }
   ],
   "projects": [
@@ -30,7 +47,8 @@
     { "id": "pm", "name": "Project Management", "color": "#8b5cf6", "icon": "📊" }
   ],
   "activities": [
-    { "type": "moved", "actor": "User", "task": "PM Agent Setup", "to": "in_progress", "time": "just now" }
+    { "type": "created", "actor": "PM", "task": "System Architecture Design", "time": "just now" },
+    { "type": "moved", "actor": "PM", "task": "PM Agent Setup", "to": "done", "time": "just now" }
   ],
-  "lastUpdated": "2026-02-03T06:50:00Z"
+  "lastUpdated": "2026-02-03T06:55:00Z"
 }
