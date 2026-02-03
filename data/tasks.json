@@ -8,13 +8,17 @@
       "project": "sea-net",
       "tags": ["sprint1", "day1", "setup", "architecture", "hybrid"],
       "subtasks": [
-        { "id": "sub_001", "title": "Sprint planning meeting", "done": false },
+        { "id": "sub_001", "title": "Sprint planning meeting", "done": true },
         { "id": "sub_002", "title": "Create GitHub repo & initialize project", "done": false },
         { "id": "sub_003", "title": "Setup Vite + React + Tauri", "done": false },
         { "id": "sub_004", "title": "Design Prisma schema (users, bookings, tasks, customers)", "done": false },
         { "id": "sub_005", "title": "Setup GitHub Actions CI/CD", "done": false },
         { "id": "sub_006", "title": "Document architecture decisions", "done": false },
-        { "id": "sub_007", "title": "Setup Senior Fullstack sub-agent (ollama:qwen-coder)", "done": false }
+        { "id": "sub_007", "title": "Setup Senior Fullstack sub-agent (ollama:qwen-coder)", "done": true },
+        { "id": "sub_008", "title": "Review sea-net-v1 architecture", "done": false },
+        { "id": "sub_009", "title": "Design v2 architecture improvements", "done": false },
+        { "id": "sub_010", "title": "Create architecture diagrams", "done": false },
+        { "id": "sub_011", "title": "Write architecture documentation", "done": false }
       ],
       "priority": "high",
       "dod": "All subtasks complete + documentation available",
@@ -28,25 +32,23 @@
           "author": "User",
           "text": "Confirmed: Use glm-4.7 for PM, ollama:qwen-coder for Senior Fullstack coding",
           "timestamp": "2026-02-03T08:20:00Z"
+        },
+        {
+          "author": "Senior Dev Agent",
+          "text": "Status: Working on Sprint 1 Day 1 tasks - Reviewing v1 architecture, designing v2 improvements",
+          "timestamp": "2026-02-03T08:25:00Z"
+        },
+        {
+          "author": "User",
+          "text": "Question: progress เป็นยังไง?",
+          "timestamp": "2026-02-03T08:31:00Z"
+        },
+        {
+          "author": "PM",
+          "text": "Clarification needed: Communication protocol between User (main), PM Agent (main), and Senior Dev Agent (sub-agent)",
+          "timestamp": "2026-02-03T08:35:00Z"
         }
       ]
-    },
-    {
-      "id": "arch_001",
-      "title": "🏗 System Architecture Design",
-      "description": "**Role:** Senior Fullstack Developer (sub-agent: ollama:qwen-coder)\n\n**Task:** Design and implement system architecture for sea-net-desktop-v2\n\n**Tech Stack:** TypeScript + Tauri v2\n\n**Deliverables:**\n1. System architecture design document\n2. Architecture diagrams (if applicable)\n3. Tech stack recommendations\n4. Technical decisions and rationale\n\n**Model:** ollama:qwen-coder (local, 8GB RAM)",
-      "status": "in_progress",
-      "project": "sea-net",
-      "tags": ["architecture", "tech-stack", "sub-agent"],
-      "subtasks": [
-        { "id": "sub_001", "title": "Review sea-net-v1 architecture", "done": false },
-        { "id": "sub_002", "title": "Design v2 improvements", "done": false },
-        { "id": "sub_003", "title": "Create architecture diagrams", "done": false },
-        { "id": "sub_004", "title": "Write architecture documentation", "done": false }
-      ],
-      "priority": "high",
-      "dod": "Complete architecture design with documentation and recommendations",
-      "comments": []
     }
   ],
   "projects": [
@@ -56,9 +58,7 @@
     { "id": "sea-net", "name": "Sea-Net Desktop v2", "color": "#f59e0b", "icon": "🚢" }
   ],
   "activities": [
-    { "type": "updated", "actor": "PM", "task": "Sprint 1 Day 1", "time": "just now" },
-    { "type": "updated", "actor": "PM", "task": "System Architecture", "time": "just now" },
-    { "type": "comment", "actor": "PM", "text": "Hybrid approach: glm-4.7 for PM, ollama:qwen-coder for coding", "time": "just now" }
+    { "type": "updated", "actor": "PM", "task": "Sprint 1 Day 1", "time": "just now" }
   ],
-  "lastUpdated": "2026-02-03T08:20:00Z"
+  "lastUpdated": "2026-02-03T08:35:00Z"
 }
