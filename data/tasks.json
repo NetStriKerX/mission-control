@@ -3,8 +3,8 @@
     {
       "id": "pm_setup_001",
       "title": "🤖 Setup PM Agent Sub-agent",
-      "description": "Create and configure a Project Manager AI assistant that acts as PM via chat. This agent will help with:\n\n- Breaking down tasks into subtasks\n- Prioritizing work items\n- Estimating effort/time\n- Tracking progress across projects\n- Following up on deadlines\n- Documenting decisions and summaries\n\n**Approach:** Create this as a sub-agent in OpenClaw with its own memory file for project tracking.",
-      "status": "backlog",
+      "description": "Create and configure a Project Manager AI assistant that acts as PM via chat. This agent will help with:\n- Breaking down tasks into subtasks\n- Prioritizing work items\n- Estimating effort/time\n- Tracking progress across projects\n- Following up on deadlines\n- Documenting decisions and summaries\n\n**Approach:** Create this as a sub-agent in OpenClaw with its own memory file for project tracking.\n\n**Delivery:** User will interact with PM agent via Telegram — create sub-agent session that can receive messages via Telegram channel.",
+      "status": "in_progress",
       "project": "pm",
       "tags": ["pm", "setup", "agent"],
       "subtasks": [
@@ -15,7 +15,13 @@
       ],
       "priority": "high",
       "dod": "PM agent responds to project management requests via chat and maintains project tracking memory",
-      "comments": []
+      "comments": [
+        {
+          "author": "OpenClaw",
+          "text": "Started setup - user wants to interact with PM agent via Telegram",
+          "timestamp": "2026-02-03T06:50:00Z"
+        }
+      ]
     }
   ],
   "projects": [
@@ -24,7 +30,7 @@
     { "id": "pm", "name": "Project Management", "color": "#8b5cf6", "icon": "📊" }
   ],
   "activities": [
-    { "type": "created", "actor": "OpenClaw", "task": "PM Agent Setup", "time": "just now" }
+    { "type": "moved", "actor": "User", "task": "PM Agent Setup", "to": "in_progress", "time": "just now" }
   ],
-  "lastUpdated": "2026-02-03T06:45:00Z"
+  "lastUpdated": "2026-02-03T06:50:00Z"
 }
