@@ -3,66 +3,49 @@
     {
       "id": "sprint1_day1",
       "title": "🏗 Sprint 1 Day 1: Setup & Architecture",
-      "description": "**Date:** Monday, 3 Feb 2026\n\n**Goal:** Complete project setup and define architecture\n\n**Tasks:**\n1. Sprint Planning & Architecture Review\n2. Project setup (Vite + React + Tauri)\n3. Database schema design (Prisma)\n4. Setup CI/CD pipeline\n\n**Tech Stack:** TypeScript + Tauri v2\n\n**Expected Deliverables:**\n- Project initialized\n- Database schema documented\n- CI/CD pipeline running\n- Architecture decisions documented",
+      "description": "**Date:** Monday, 3 Feb 2026\n\n**Goal:** Complete project setup and define architecture\n\n**Tech Stack Decision:** TypeScript + Tauri v2 (balanced: type safety + JS ecosystem)\n\n**Tasks:**\n1. Sprint Planning & Architecture Review\n2. Project setup (Vite + React + Tauri)\n3. Database schema design (Prisma)\n4. Setup CI/CD pipeline\n\n**Model Assignment:**\n- **PM Agent (Main):** glm-4.7 → Architecture, planning, big decisions, code review\n- **Senior Fullstack (Sub-agent):** ollama:qwen-coder → Heavy coding, debugging, implementation\n\n**Reasoning:** Hybrid approach saves API quota while maintaining quality architecture decisions\n\n**Expected Deliverables:**\n- Project initialized\n- Database schema documented\n- CI/CD pipeline running\n- Architecture decisions documented",
       "status": "in_progress",
       "project": "sea-net",
-      "tags": ["sprint1", "day1", "setup", "architecture"],
+      "tags": ["sprint1", "day1", "setup", "architecture", "hybrid"],
       "subtasks": [
         { "id": "sub_001", "title": "Sprint planning meeting", "done": false },
         { "id": "sub_002", "title": "Create GitHub repo & initialize project", "done": false },
         { "id": "sub_003", "title": "Setup Vite + React + Tauri", "done": false },
         { "id": "sub_004", "title": "Design Prisma schema (users, bookings, tasks, customers)", "done": false },
         { "id": "sub_005", "title": "Setup GitHub Actions CI/CD", "done": false },
-        { "id": "sub_006", "title": "Document architecture decisions", "done": false }
+        { "id": "sub_006", "title": "Document architecture decisions", "done": false },
+        { "id": "sub_007", "title": "Setup Senior Fullstack sub-agent (ollama:qwen-coder)", "done": false }
       ],
       "priority": "high",
       "dod": "All subtasks complete + documentation available",
       "comments": [
         {
           "author": "PM",
-          "text": "Sprint started - confirmed timeline approved by user",
-          "timestamp": "2026-02-03T08:15:00Z"
-        }
-      ]
-    },
-    {
-      "id": "timeline_001",
-      "title": "📅 sea-net-desktop-v2 - Complete Timeline",
-      "description": "**Total Timeline: 2 Weeks (14 Days)**",
-      "status": "done",
-      "project": "sea-net",
-      "tags": ["timeline", "planning"],
-      "subtasks": [
-        { "id": "sub_001", "title": "Sprint 1: Foundation (Day 1-5)", "done": false },
-        { "id": "sub_002", "title": "Sprint 2: Productivity (Day 6-10)", "done": false },
-        { "id": "sub_003", "title": "Sprint 3: Polish (Day 11-12)", "done": false },
-        { "id": "sub_004", "title": "Wrap: Testing & Deploy (Day 13-14)", "done": false }
-      ],
-      "priority": "high",
-      "dod": "All tasks in timeline complete and deployed",
-      "comments": [
+          "text": "Hybrid model decision approved by user - saves API quota",
+          "timestamp": "2026-02-03T08:20:00Z"
+        },
         {
           "author": "User",
-          "text": "Timeline approved - ready to start",
-          "timestamp": "2026-02-03T08:12:00Z"
+          "text": "Confirmed: Use glm-4.7 for PM, ollama:qwen-coder for Senior Fullstack coding",
+          "timestamp": "2026-02-03T08:20:00Z"
         }
       ]
     },
     {
       "id": "arch_001",
       "title": "🏗 System Architecture Design",
-      "description": "Complete architecture design for sea-net-desktop-v2 with TypeScript + Tauri",
+      "description": "**Role:** Senior Fullstack Developer (sub-agent: ollama:qwen-coder)\n\n**Task:** Design and implement system architecture for sea-net-desktop-v2\n\n**Tech Stack:** TypeScript + Tauri v2\n\n**Deliverables:**\n1. System architecture design document\n2. Architecture diagrams (if applicable)\n3. Tech stack recommendations\n4. Technical decisions and rationale\n\n**Model:** ollama:qwen-coder (local, 8GB RAM)",
       "status": "in_progress",
       "project": "sea-net",
-      "tags": ["architecture", "tech-stack"],
+      "tags": ["architecture", "tech-stack", "sub-agent"],
       "subtasks": [
-        { "id": "sub_001", "title": "Define tech stack (TypeScript + Tauri)", "done": true },
-        { "id": "sub_002", "title": "Design system architecture", "done": false },
-        { "id": "sub_003", "title": "Create architecture document", "done": false },
-        { "id": "sub_004", "title": "Define database schema", "done": false }
+        { "id": "sub_001", "title": "Review sea-net-v1 architecture", "done": false },
+        { "id": "sub_002", "title": "Design v2 improvements", "done": false },
+        { "id": "sub_003", "title": "Create architecture diagrams", "done": false },
+        { "id": "sub_004", "title": "Write architecture documentation", "done": false }
       ],
       "priority": "high",
-      "dod": "Complete architecture document with diagrams and tech decisions",
+      "dod": "Complete architecture design with documentation and recommendations",
       "comments": []
     }
   ],
@@ -73,8 +56,9 @@
     { "id": "sea-net", "name": "Sea-Net Desktop v2", "color": "#f59e0b", "icon": "🚢" }
   ],
   "activities": [
-    { "type": "moved", "actor": "User", "task": "Sprint 1 Day 1", "to": "in_progress", "time": "just now" },
-    { "type": "created", "actor": "PM", "task": "Sprint 1 Day 1", "time": "just now" }
+    { "type": "updated", "actor": "PM", "task": "Sprint 1 Day 1", "time": "just now" },
+    { "type": "updated", "actor": "PM", "task": "System Architecture", "time": "just now" },
+    { "type": "comment", "actor": "PM", "text": "Hybrid approach: glm-4.7 for PM, ollama:qwen-coder for coding", "time": "just now" }
   ],
-  "lastUpdated": "2026-02-03T08:15:00Z"
+  "lastUpdated": "2026-02-03T08:20:00Z"
 }
