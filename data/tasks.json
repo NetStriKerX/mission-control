@@ -3,7 +3,7 @@
     {
       "id": "sprint1_day1",
       "title": "🏗 Sprint 1 Day 1: Setup & Architecture",
-      "description": "**Date:** Monday, 3 Feb 2026\n\n**Goal:** Complete project setup and define architecture\n\n**Tech Stack Decision:** TypeScript + Tauri v2 (balanced: type safety + JS ecosystem)\n\n**Tasks:**\n1. Sprint Planning & Architecture Review\n2. Project setup (Vite + React + Tauri)\n3. Database schema design (Prisma)\n4. Setup CI/CD pipeline\n\n**Model Assignment:**\n- **PM Agent (Main):** glm-4.7 → Architecture, planning, big decisions, code review\n- **Senior Fullstack (Sub-agent):** ollama:qwen-coder → Heavy coding, debugging, implementation\n\n**Reasoning:** Hybrid approach saves API quota while maintaining quality architecture decisions\n\n**Expected Deliverables:**\n- Project initialized\n- Database schema documented\n- CI/CD pipeline running\n- Architecture decisions documented\n\n**PM Instructions for Subtask Updates:**\n- To mark subtask 002 as done: use `pm: mark_subtask sprint1_day1 sub_002`\n- To update progress: use `pm: comment sprint1_day1 \"Update progress\"\n- To mark task done: use `pm: task sprint1_day1 done`",
+      "description": "**Date:** Monday, 3 Feb 2026\n\n**Goal:** Complete project setup and define architecture\n\n**Tech Stack Decision:** TypeScript + Tauri v2 (balanced: type safety + JS ecosystem)\n\n**Tasks:**\n1. Sprint Planning & Architecture Review\n2. Project setup (Vite + React + Tauri)\n3. Database schema design (Prisma)\n4. Setup CI/CD pipeline\n\n**Model Assignment:**\n- **PM Agent (Main):** glm-4.7 → Architecture, planning, big decisions, code review\n- **Senior Fullstack (Sub-agent):** ollama:qwen-coder → Heavy coding, debugging, implementation\n\n**Reasoning:** Hybrid approach saves API quota while maintaining quality architecture decisions\n\n**Expected Deliverables:**\n- Project initialized\n- Database schema documented\n- CI/CD pipeline running\n- Architecture decisions documented\n\n**User Decision:** Both Sprint 1 Day 1 (Architecture) AND AI Finance Search should be pursued in parallel - both are valuable priorities",
       "status": "in_progress",
       "project": "sea-net",
       "tags": ["sprint1", "day1", "setup", "architecture", "hybrid"],
@@ -25,13 +25,42 @@
       "comments": [
         {
           "author": "PM",
-          "text": "Hybrid model decision approved by user - saves API quota",
-          "timestamp": "2026-02-03T08:20:00Z"
+          "text": "User confirmed: Both Sprint 1 Day 1 (Architecture) AND AI Finance Search should be pursued in parallel - both are valuable priorities",
+          "timestamp": "2026-02-03T10:00:00Z"
+        },
+        {
+          "author": "User",
+          "text": "B ก็ดีนะ - confirm both options",
+          "timestamp": "2026-02-03T10:01:00Z"
         },
         {
           "author": "PM",
-          "text": "PM Instructions added for subtask updates via Telegram commands",
-          "timestamp": "2026-02-03T08:45:00Z"
+          "text": "Will track both Sprint 1 Day 1 AND AI Finance Search as parallel priorities",
+          "timestamp": "2026-02-03T10:02:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sys_alert_trends",
+      "title": "🔍 System Alert: Search AI Finance SaaS Trends",
+      "description": "**Triggered by:** System web_search command\n\n**Search Topic:** Exciting news or money-making opportunities in tech/finance (AI, startups, SaaS, markets, etc.)\n\n**Findings Required:** Top 3-5 most interesting with brief summaries + why they matter + actionable insights\n\n**Constraints:** Keep under 200 words total. Focus on actionable insights or disruptive trends.\n\n**Status:** Backlog - User confirmed it's valuable and should be tracked alongside Sprint 1",
+      "status": "backlog",
+      "project": "system",
+      "tags": ["system", "search", "trends", "finance", "ai"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Search: Generative AI finance SaaS funding 2025", "done": false },
+        { "id": "sub_002", "title": "Search: DeFi trends 2026 opportunities", "done": false },
+        { "id": "sub_003", "title": "Search: SaaS monetization strategies startups", "done": false },
+        { "id": "sub_004", "title": "Compile top 3-5 findings with summaries", "done": false },
+        { "id": "sub_005", "title": "Write actionable insights report", "done": false }
+      ],
+      "priority": "medium",
+      "dod": "Report with top 3-5 findings + actionable insights",
+      "comments": [
+        {
+          "author": "PM",
+          "text": "Confirmed: User values this search and wants it tracked alongside Sprint 1",
+          "timestamp": "2026-02-03T10:05:00Z"
         }
       ]
     }
@@ -40,10 +69,12 @@
     { "id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚" },
     { "id": "default", "name": "My Project", "color": "#3b82f6", "icon": "📁" },
     { "id": "pm", "name": "Project Management", "color": "#8b5cf6", "icon": "📊" },
-    { "id": "sea-net", "name": "Sea-Net Desktop v2", "color": "#f59e0b", "icon": "🚢" }
+    { "id": "sea-net", "name": "Sea-Net Desktop v2", "color": "#f59e0b", "icon": "🚢" },
+    { "id": "system", "name": "System Alerts", "color": "#f59e0b", "icon": "🔍" }
   ],
   "activities": [
-    { "type": "updated", "actor": "PM", "task": "Sprint 1 Day 1", "time": "just now" }
+    { "type": "updated", "actor": "PM", "task": "Sprint 1 Day 1", "time": "just now" },
+    { "type": "updated", "actor": "PM", "task": "Search AI Finance SaaS Trends", "time": "just now" }
   ],
-  "lastUpdated": "2026-02-03T08:45:00Z"
+  "lastUpdated": "2026-02-03T10:05:00Z"
 }
