@@ -3,7 +3,7 @@
     {
       "id": "sprint1_day1",
       "title": "🏗 Sprint 1 Day 1: Setup & Architecture",
-      "description": "**Date:** Monday, 3 Feb 2026\n\n**Goal:** Complete project setup and define architecture\n\n**Tech Stack Decision:** TypeScript + Tauri v2 (balanced: type safety + JS ecosystem)\n\n**Tasks:**\n1. Sprint Planning & Architecture Review\n2. Project setup (Vite + React + Tauri)\n3. Database schema design (Prisma)\n4. Setup CI/CD pipeline\n\n**Model Assignment:**\n- **PM Agent (Main):** glm-4.7 → Architecture, planning, big decisions, code review\n- **Senior Fullstack (Sub-agent):** ollama:qwen-coder → Heavy coding, debugging, implementation\n\n**Reasoning:** Hybrid approach saves API quota while maintaining quality architecture decisions\n\n**Expected Deliverables:**\n- Project initialized\n- Database schema documented\n- CI/CD pipeline running\n- Architecture decisions documented",
+      "description": "**Date:** Monday, 3 Feb 2026\n\n**Goal:** Complete project setup and define architecture\n\n**Tech Stack Decision:** TypeScript + Tauri v2 (balanced: type safety + JS ecosystem)\n\n**Tasks:**\n1. Sprint Planning & Architecture Review\n2. Project setup (Vite + React + Tauri)\n3. Database schema design (Prisma)\n4. Setup CI/CD pipeline\n\n**Model Assignment:**\n- **PM Agent (Main):** glm-4.7 → Architecture, planning, big decisions, code review\n- **Senior Fullstack (Sub-agent):** ollama:qwen-coder → Heavy coding, debugging, implementation\n\n**Reasoning:** Hybrid approach saves API quota while maintaining quality architecture decisions\n\n**Expected Deliverables:**\n- Project initialized\n- Database schema documented\n- CI/CD pipeline running\n- Architecture decisions documented\n\n**PM Instructions for Subtask Updates:**\n- To mark subtask 002 as done: use `pm: mark_subtask sprint1_day1 sub_002`\n- To update progress: use `pm: comment sprint1_day1 \"Update progress\"\n- To mark task done: use `pm: task sprint1_day1 done`",
       "status": "in_progress",
       "project": "sea-net",
       "tags": ["sprint1", "day1", "setup", "architecture", "hybrid"],
@@ -29,24 +29,9 @@
           "timestamp": "2026-02-03T08:20:00Z"
         },
         {
-          "author": "User",
-          "text": "Confirmed: Use glm-4.7 for PM, ollama:qwen-coder for Senior Fullstack coding",
-          "timestamp": "2026-02-03T08:20:00Z"
-        },
-        {
-          "author": "Senior Dev Agent",
-          "text": "Status: Working on Sprint 1 Day 1 tasks - Reviewing v1 architecture, designing v2 improvements",
-          "timestamp": "2026-02-03T08:25:00Z"
-        },
-        {
-          "author": "User",
-          "text": "Question: progress เป็นยังไง?",
-          "timestamp": "2026-02-03T08:31:00Z"
-        },
-        {
           "author": "PM",
-          "text": "Clarification needed: Communication protocol between User (main), PM Agent (main), and Senior Dev Agent (sub-agent)",
-          "timestamp": "2026-02-03T08:35:00Z"
+          "text": "PM Instructions added for subtask updates via Telegram commands",
+          "timestamp": "2026-02-03T08:45:00Z"
         }
       ]
     }
@@ -60,5 +45,5 @@
   "activities": [
     { "type": "updated", "actor": "PM", "task": "Sprint 1 Day 1", "time": "just now" }
   ],
-  "lastUpdated": "2026-02-03T08:35:00Z"
+  "lastUpdated": "2026-02-03T08:45:00Z"
 }
